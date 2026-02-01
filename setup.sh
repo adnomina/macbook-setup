@@ -26,5 +26,13 @@ fi
 echo "Symlinking dotfiles ..."
 stow --target="$HOME" --dir=./dotfiles fish ghostty nvim zed
 
+if ! command -v mise &> /dev/null; then
+    echo "Installing mise ..."
+
+    curl https://mise.run | sh
+
+    echo "mise installed."
+fi
+
 # Restart shell
 exec fish
