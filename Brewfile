@@ -6,6 +6,7 @@ brew "jq"
 brew "gh"
 brew "tmux"
 brew "neovim"
+brew "docker"
 
 # GNU utilities
 brew "coreutils"
@@ -14,9 +15,8 @@ brew "findutils"
 brew "gawk"
 
 # GUI applications
-cask "visual-studio-code"
-cask "docker"
 cask "ghostty"
+cask "zed"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
