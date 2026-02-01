@@ -1,0 +1,33 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
+    "fff.nvim": {
+      "rev": "5ab271ea9da084495d18e3f90f47aa6a87289b01",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "nvim": {
+      "rev": "beaf41a30c26fd7d6c386d383155cbd65dd554cd",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-web-devicons": {
+      "rev": "803353450c374192393f5387b6a0176d0972b848",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
+    }
+  }
+}

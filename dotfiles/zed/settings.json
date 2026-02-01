@@ -1,0 +1,93 @@
+{
+	"show_edit_predictions": true,
+	"edit_predictions": {
+		"mode": "subtle"
+	},
+	"colorize_brackets": true,
+	"hard_tabs": false,
+	"tab_size": 4,
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"vim_mode": true,
+	"relative_line_numbers": "enabled",
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "Catppuccin Macchiato"
+	},
+	"languages": {
+		"JavaScript": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			},
+			"format_on_save": "on"
+		},
+		"TypeScript": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			},
+			"format_on_save": "on"
+		},
+		"TSX": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			},
+			"format_on_save": "on"
+		},
+		"JSON": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true
+			},
+			"format_on_save": "on"
+		},
+		"JSONC": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true
+			},
+			"format_on_save": "on"
+		},
+		"CSS": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"code_actions_on_format": {
+				"source.fixAll.biome": true
+			},
+			"format_on_save": "on"
+		}
+	}
+}
