@@ -26,15 +26,5 @@ fi
 echo "Symlinking dotfiles ..."
 stow --target="$HOME" --dir=./dotfiles fish ghostty nvim zed
 
-# Install mise for Node.js and npm management
-if ! command -v mise &> /dev/null; then
-    echo "Installing mise ..."
-
-    curl https://mise.run | sh
-    mise activate fish | source
-
-    echo "mise installed and activated."
-fi
-
 # Restart shell
 exec fish
