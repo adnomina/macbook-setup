@@ -1,6 +1,7 @@
 theme = catppuccin-macchiato.conf
 
 font-family = "JetBrainsMono Nerd Font"
+font-size = 16
 
 window-save-state = always
 window-height = 30
