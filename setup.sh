@@ -17,7 +17,7 @@ fi
 if [[ -f ./Brewfile ]]; then
   echo "Installing packages from Brewfile ..."
 
-  brew bundle --file=./Brewfile
+  brew bundle --file=./.Brewfile
 else
   echo "Warning: Brewfile not found."
 fi
