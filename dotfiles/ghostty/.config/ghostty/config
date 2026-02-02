@@ -7,6 +7,3 @@ window-height = 30
 window-width = 120
 
 shell-integration-features = ssh-terminfo,ssh-env
-
-keybind = performable:ctrl+c=copy_to_clipboard
-keybind = performable:ctrl+v=paste_from_clipboard
