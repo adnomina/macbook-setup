@@ -13,6 +13,9 @@ if ! command -v brew &> /dev/null; then
     echo "Homebrew installed."
 fi
 
+# Disable Homebrew analytics
+brew analytics off
+
 # Install packages from Brewfile
 if [[ -f ./Brewfile ]]; then
   echo "Installing packages from Brewfile ..."
