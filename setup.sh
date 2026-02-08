@@ -30,14 +30,16 @@ echo "Symlinking dotfiles ..."
 stow --target="$HOME" --dir=./dotfiles fish ghostty nvim zed
 
 # Add fish to list of standard shells if not already present
+echo "Configuring fish as default shell ..."
 FISH_PATH="$(which fish)"
+
 if ! grep -qx "$FISH_PATH" /etc/shells; then
   echo "Adding fish to /etc/shells ..."
   echo "$FISH_PATH" | sudo tee -a /etc/shells > /dev/null
 fi
 
 # Change shell to fish
-chsh -s $(which fish)
+chsh -s "$FISH_PATH"
 
 # Restart shell
 exec fish
