@@ -1,18 +1,25 @@
 {
+  "collaboration_panel": {
+    "default_width": 300.0
+  },
+  "notification_panel": {
+    "default_width": 300.0
+  },
+  "git_panel": {
+    "default_width": 300.0
+  },
   "git": {
     "inline_blame": {
       "enabled": false
     }
   },
   "terminal": {
-    "toolbar": {
-      "breadcrumbs": true
-    },
     "keep_selection_on_copy": false,
     "copy_on_select": true,
     "option_as_meta": true
   },
   "project_panel": {
+    "default_width": 300.0,
     "indent_guides": {
       "show": "never"
     },
