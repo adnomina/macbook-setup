@@ -1,4 +1,14 @@
 {
+  "use_system_window_tabs": true,
+  "tabs": {
+    "show_diagnostics": "all",
+    "file_icons": true,
+    "git_status": true
+  },
+  "title_bar": {
+    "show_menus": true,
+    "show_branch_icon": true
+  },
   "close_on_file_delete": true,
   "diagnostics": {
     "inline": {
