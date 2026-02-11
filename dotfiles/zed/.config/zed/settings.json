@@ -1,4 +1,6 @@
 {
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "format_on_save": "off",
   "show_whitespaces": "selection",
   "minimap": {
     "show": "always",
@@ -17,6 +19,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato",
+    "dark": "Catppuccin Mocha",
   },
 }
