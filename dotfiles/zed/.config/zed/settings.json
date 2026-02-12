@@ -1,4 +1,12 @@
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
+    "github-copilot": {
+      "type": "registry"
+    }
+  },
   "collaboration_panel": {
     "default_width": 300.0
   },
@@ -35,11 +43,6 @@
     "show_branch_icon": true
   },
   "close_on_file_delete": true,
-  "diagnostics": {
-    "inline": {
-      "enabled": true
-    }
-  },
   "prettier": {
     "allowed": true
   },
@@ -87,7 +90,8 @@
     "show": "always",
   },
   "edit_predictions": {
-    "mode": "subtle",
+    "provider": "copilot",
+    "mode": "eager",
   },
   "colorize_brackets": true,
   "telemetry": {
