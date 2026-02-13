@@ -1,6 +1,8 @@
 function fish_greeting
-    echo "Hello, Nicolas ✨"
+    printf (set_color --bold 00FFFF)"Greetings, User. Welcome to the Grid.\n"(set_color normal)
 end
+
+set -gx EDITOR zed
 
 alias la="ls -la"
 alias vi='nvim'
