@@ -1,26 +1,17 @@
 [
-	{
-		"context": "Workspace",
-		"bindings": {
-			// "shift shift": "file_finder::Toggle"
-		}
-	},
-	{
-		"context": "Editor && vim_mode == insert",
-		"bindings": {
-			"j j": "vim::NormalBefore"
-		}
-	},
-	{
-		"context": "Workspace",
-		"bindings": {
-			"alt-j": "terminal_panel::Toggle"
-		}
-	},
- {
-  "context": "Workspace",
-  "bindings": {
-   "cmd-shift-g": "git_panel::ToggleFocus"
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd"
+    }
   }
- }
 ]
