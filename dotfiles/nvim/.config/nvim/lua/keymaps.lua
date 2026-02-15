@@ -1,16 +1,10 @@
 local keymap = vim.keymap
 
-keymap.set("i", "jj", "<Esc>")
+keymap.set("i", "jk", "<Esc>")
 
 -- Move up and down and center cursor
 keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "<C-d>", "<C-d>zz")
-
--- Save the current file
-keymap.set("n", "<Leader>w", "<cmd>w!<CR>", { desc = "Save file" })
-
--- Quit Neovim
-keymap.set("n", "<Leader>q", "<cmd>q<CR>", { desc = "Quit Neovim" })
 
 -- Format the current buffer using LSP
 keymap.set(
