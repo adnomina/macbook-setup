@@ -1,9 +1,6 @@
 vim.lsp.enable({
-    "basedpyright",
     "bashls",
     "biome",
     "lua_ls",
-    "phpactor",
-    "ruff",
     "ts_ls",
 })
