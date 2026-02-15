@@ -43,7 +43,7 @@ require("blink.cmp").setup({
 })
 
 require("catppuccin").setup({
-    flavour = "macchiato",
+    flavour = "mocha",
     transparent_background = false,
     term_colors = true,
 })
