@@ -1,12 +1,12 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
     "fff.nvim": {
-      "rev": "5ab271ea9da084495d18e3f90f47aa6a87289b01",
+      "rev": "c9137b19b6b86de2bc3c978fb64fe6e78ddeb0b4",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "lualine.nvim": {
@@ -22,7 +22,7 @@
       "src": "https://github.com/catppuccin/nvim"
     },
     "nvim-web-devicons": {
-      "rev": "803353450c374192393f5387b6a0176d0972b848",
+      "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "which-key.nvim": {
