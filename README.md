@@ -72,23 +72,4 @@ dotfiles/
 
 ## Theme
 
-[Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) is used consistently across Ghostty, Neovim, and Zed.
-
-## Prerequisites
-
-- macOS on Apple Silicon
-- Internet access
-- `sudo` access
-
-## Repository Structure
-
-```
-.
-├── Brewfile          # Homebrew package manifest
-├── setup.sh          # Main bootstrap script
-└── dotfiles/         # Stow-managed dotfile packages
-    ├── fish/
-    ├── ghostty/
-    ├── nvim/
-    └── zed/
-```
+[Catppuccin Mocha](https://github.com/catppuccin/catppuccin) is used consistently across Ghostty, Neovim, and Zed.
