@@ -1,6 +1,13 @@
 vim.lsp.enable({
     "bashls",
-    "biome",
+    "cssls",
+    "eslint",
+    "graphql",
+    "html",
+    "jsonls",
     "lua_ls",
-    "ts_ls",
+    "prismals",
+    "sqlls",
+    "tailwindcss",
+    "vtsls"
 })

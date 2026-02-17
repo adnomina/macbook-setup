@@ -9,6 +9,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/dmtrKovalenko/fff.nvim" },
+    "https://github.com/neovim/nvim-lspconfig"
 })
 
 require("mason").setup()

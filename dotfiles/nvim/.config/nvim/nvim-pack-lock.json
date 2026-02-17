@@ -21,6 +21,10 @@
       "rev": "0a5de4da015a175f416d6ef1eda84661623e0500",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "nvim-lspconfig": {
+      "rev": "44acfe887d4056f704ccc4f17513ed41c9e2b2e6",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
     "nvim-web-devicons": {
       "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
