@@ -23,6 +23,7 @@ opt.undofile = true
 opt.completeopt = "fuzzy,menu,menuone,noinsert,popup"
 opt.hlsearch = false
 opt.clipboard = "unnamedplus"
+opt.listchars = "tab:| ,trail:-,nbsp:+"
 
 vim.g.mapleader = " "
 
