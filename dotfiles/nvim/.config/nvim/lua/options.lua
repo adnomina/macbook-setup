@@ -24,6 +24,7 @@ opt.completeopt = "fuzzy,menu,menuone,noinsert,popup"
 opt.hlsearch = false
 opt.clipboard = "unnamedplus"
 opt.listchars = "tab:| ,trail:-,nbsp:+"
+opt.updatetime = 300
 
 vim.g.mapleader = " "
 
