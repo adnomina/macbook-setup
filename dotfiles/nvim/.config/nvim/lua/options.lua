@@ -48,3 +48,5 @@ vim.g.fff = {
 
 vim.cmd.filetype("plugin indent on")
 vim.cmd.colorscheme("catppuccin")
+
+vim.diagnostic.config({ virtual_text = true })
