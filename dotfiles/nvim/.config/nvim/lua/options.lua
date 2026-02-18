@@ -25,6 +25,7 @@ opt.hlsearch = false
 opt.clipboard = "unnamedplus"
 opt.listchars = "tab:| ,trail:-,nbsp:+"
 opt.updatetime = 300
+opt.mouse = ""
 
 vim.g.mapleader = " "
 
