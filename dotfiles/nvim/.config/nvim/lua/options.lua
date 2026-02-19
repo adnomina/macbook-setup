@@ -21,7 +21,6 @@ opt.inccommand = "nosplit"
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 opt.completeopt = "fuzzy,menu,menuone,noinsert,popup"
-opt.hlsearch = false
 opt.clipboard = "unnamedplus"
 opt.listchars = "tab:| ,trail:-,nbsp:+"
 opt.updatetime = 300
