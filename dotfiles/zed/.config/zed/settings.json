@@ -75,7 +75,7 @@
     "code_actions": true
   },
   "hover_popover_delay": 200,
-  "vertical_scroll_margin": 0.0,
+  "vertical_scroll_margin": 0,
   "which_key": {
     "delay_ms": 250,
     "enabled": true
@@ -102,4 +102,11 @@
   "relative_line_numbers": "enabled",
   "buffer_font_size": 16,
   "theme": "Catppuccin Mocha",
+  "cursor_blink": false,
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_bar": {
+    "show": false
+  }
 }
