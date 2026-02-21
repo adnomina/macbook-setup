@@ -1,5 +1,4 @@
-vim.pack.add({
-    { src = "https://github.com/mason-org/mason.nvim" },
+vim.pack.add({ { src = "https://github.com/mason-org/mason.nvim" },
     {
         src = "https://github.com/saghen/blink.cmp",
         version = vim.version.range("^1")
@@ -10,7 +9,11 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/dmtrKovalenko/fff.nvim" },
     "https://github.com/neovim/nvim-lspconfig",
-    "https://github.com/lewis6991/gitsigns.nvim"
+    "https://github.com/lewis6991/gitsigns.nvim",
+    {
+        src = "https://github.com/nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate"
+    },
 })
 
 require("mason").setup()

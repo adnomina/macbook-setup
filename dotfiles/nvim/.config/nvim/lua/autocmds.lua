@@ -29,3 +29,22 @@ autocmd("PackChanged", {
         end
     end,
 })
+
+-- Run TSInstall on a new machine
+autocmd("User", {
+    pattern = "TSUpdate",
+    callback = function()
+        require("nvim-treesitter").install({
+            "javascript",
+            "typescript",
+            "tsx",
+            "css",
+            "html",
+            "json",
+            "graphql",
+            "lua",
+            "markdown",
+            "markdown_inline",
+        })
+    end,
+})
