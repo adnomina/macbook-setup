@@ -3,6 +3,7 @@ function fish_greeting
 end
 
 set -gx EDITOR nvim
+set -gx PATH /run/current-system/sw/bin $PATH
 
 alias la="ls -la"
 alias vi='nvim'
