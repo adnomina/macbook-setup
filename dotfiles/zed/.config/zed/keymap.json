@@ -1,17 +1,35 @@
 [
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "j k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "VimControl && !menu && vim_mode != operator",
-    "bindings": {
-      "w": "vim::NextSubwordStart",
-      "b": "vim::PreviousSubwordStart",
-      "e": "vim::NextSubwordEnd",
-      "g e": "vim::PreviousSubwordEnd"
-    }
-  }
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-k d": "workspace::ToggleAllDocks",
+            "ctrl-k c": "workspace::ToggleCenteredLayout",
+            "ctrl-k k": ["workspace::SendKeystrokes", "ctrl-k d ctrl-k c"],
+            "ctrl-k h": "workspace::ToggleLeftDock",
+            "ctrl-k l": "workspace::ToggleRightDock",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "space": null,
+            "space f": "editor::Format",
+            "space i": "editor::OrganizeImports",
+        },
+    },
+    {
+        "context": "VimControl && !menu && vim_mode != operator",
+        "bindings": {
+            "w": "vim::NextSubwordStart",
+            "b": "vim::PreviousSubwordStart",
+            "e": "vim::NextSubwordEnd",
+            "g e": "vim::PreviousSubwordEnd",
+        },
+    },
 ]
