@@ -163,7 +163,7 @@
     },
     "edit_predictions": {
         "provider": "copilot",
-        "mode": "eager",
+        "mode": "subtle",
     },
 
     // MCPs
