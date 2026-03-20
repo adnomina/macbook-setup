@@ -10,6 +10,8 @@ alias vi='nvim'
 alias vim='nvim'
 alias cat="bat"
 alias less="bat"
+alias cc="claude"
+alias oc="opencode"
 
 starship init fish | source
 
