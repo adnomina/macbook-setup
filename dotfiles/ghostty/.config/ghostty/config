@@ -8,4 +8,22 @@ window-save-state = always
 window-height = 30
 window-width = 120
 
+shell-integration = fish
 shell-integration-features = ssh-terminfo,ssh-env
+
+mouse-hide-while-typing = true
+
+keybind = ctrl+s>shift+5=new_split:right
+keybind = ctrl+s>shift+apostrophe=new_split:down
+
+keybind = ctrl+s>h=goto_split:left
+keybind = ctrl+s>j=goto_split:down
+keybind = ctrl+s>k=goto_split:up
+keybind = ctrl+s>l=goto_split:right
+
+keybind = ctrl+s>shift+h=resize_split:left,50
+keybind = ctrl+s>shift+j=resize_split:down,50
+keybind = ctrl+s>shift+k=resize_split:up,50
+keybind = ctrl+s>shift+l=resize_split:right,50
+
+keybind = ctrl+s>f=toggle_split_zoom
