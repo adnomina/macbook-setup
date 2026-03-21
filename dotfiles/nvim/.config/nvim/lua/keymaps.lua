@@ -9,7 +9,7 @@ keymap.set("n", "<C-d>", "<C-d>zz")
 -- Format the current buffer using LSP
 keymap.set(
     "n",
-    "<Leader>fb",
+    "<Leader>f",
     "<cmd>lua vim.lsp.buf.format()<CR>",
     { desc = "Format file" }
 )
@@ -33,7 +33,7 @@ keymap.set(
 -- Update plugins with vim.pack
 keymap.set(
     "n",
-    "<Leader>ps",
+    "<Leader>u",
     "<cmd>lua vim.pack.update()<CR>",
     { desc = "Update plugins" }
 )
