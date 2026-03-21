@@ -99,6 +99,15 @@
 
             system.activationScripts.postActivation.text = ''
                 echo "Symlinking dotfiles ..."
+                rm -rf \
+                  /Users/nicolas/.config/aerospace \
+                  /Users/nicolas/.config/fish \
+                  /Users/nicolas/.config/ghostty \
+                  /Users/nicolas/.config/karabiner \
+                  /Users/nicolas/.config/nvim \
+                  /Users/nicolas/.config/starship.toml \
+                  /Users/nicolas/.config/wezterm \
+                  /Users/nicolas/.config/zed
                 ${pkgs.stow}/bin/stow --target="/Users/nicolas" --dir="${self}/dotfiles" --restow fish ghostty nvim zed starship aerospace wezterm karabiner
             '';
 
