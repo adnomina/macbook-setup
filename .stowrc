@@ -1,0 +1,5 @@
+--dir=.
+--target=~
+--restow
+--ignore=.stowrc
+--ignore=DS_Store
