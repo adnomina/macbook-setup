@@ -31,7 +31,7 @@
                     pkgs.gnupg
                     pkgs.jq
                     pkgs.mise
-                    neovim-nightly-overlay.packages.${pkgs.system}.default
+                    neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default
 		    pkgs.nil
                     pkgs.obsidian
                     pkgs.opencode
