@@ -15,27 +15,36 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 | **nvim-web-devicons** | File icons | Icons for different file types in explorer and statusline |
 | **lualine.nvim** | Status line | Minimal status/info line at bottom of window |
 | **fff.nvim** | Fuzzy file finder | Fast file search with fuzzy matching |
+| **nvim-lspconfig** | LSP configurations | Language server protocol client configs |
+| **gitsigns.nvim** | Git integration | Git signs in the sign column |
+| **nvim-treesitter** | Syntax highlighting | Tree-sitter based parsing and highlighting |
 
 ## Editor Settings
 
 ### Display
 - **Line numbers**: Relative line numbers with absolute at cursor position
 - **Color column**: 80-character guide at column 80
+- **Text width**: Wrap at 80 characters
 - **Cursor line**: Highlight current line
 - **True colors**: Full 24-bit color support
 - **Sign column**: Always visible (1-width) for diagnostics and git marks
+- **Whitespace**: Visible tab, trailing space, and non-breaking space indicators
 
 ### Indentation
 - **Type**: Spaces (expandtab)
 - **Size**: 4 spaces per tab
 - **Smart indent**: Enabled for automatic indentation
+- **Shift round**: Round indent to nearest multiple of shiftwidth
 
 ### Behavior
 - **Case-insensitive search**: Ignore case in search patterns
 - **Undo persistence**: Undo history saved to `~/.vim/undodir`
-- **Clipboard**: Sync with system clipboard (unnamed+)
+- **Clipboard**: Sync with system clipboard (unnamedplus)
 - **No swap files**: Swap file creation disabled
+- **No mouse**: Mouse support disabled
 - **Incremental command**: Live command preview without split
+- **Update time**: 300ms (for CursorHold events)
+- **Diagnostics**: Inline virtual text enabled
 
 ### File Explorer (netrw)
 - **Tree view**: List style with tree hierarchy
@@ -48,9 +57,9 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 | Keybinding | Mode | Action |
 |------------|------|--------|
 | `jk` | Insert | Exit insert mode |
-| `<Leader>fb` | Normal | Format buffer (LSP) |
+| `<Leader>f` | Normal | Format buffer (LSP) |
 | `<Leader>d` | Normal | Show diagnostics |
-| `<Leader>ps` | Normal | Update plugins |
+| `<Leader>u` | Normal | Update plugins |
 | `<Leader>e` | Normal | Open file explorer |
 | `grd` | Normal | Go to definition (LSP) |
 | `ff` | Normal | Find files (fff.nvim) |
@@ -60,6 +69,28 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 **Leader key**: Spacebar (`<Space>`)
 
 ## Configuration Details
+
+### LSP Servers
+
+Enabled via `vim.lsp.enable()`:
+
+| Server | Language |
+|--------|----------|
+| `bashls` | Bash/Shell |
+| `cssls` | CSS |
+| `eslint` | JavaScript/TypeScript linting |
+| `graphql` | GraphQL |
+| `html` | HTML |
+| `jsonls` | JSON |
+| `lua_ls` | Lua |
+| `prismals` | Prisma |
+| `sqlls` | SQL |
+| `tailwindcss` | Tailwind CSS |
+| `vtsls` | TypeScript/JavaScript |
+
+### Treesitter Languages
+
+Auto-installed on new machines: `javascript`, `typescript`, `tsx`, `css`, `html`, `json`, `graphql`, `lua`, `markdown`, `markdown_inline`
 
 ### Completion (blink.cmp)
 - Fuzzy matching with Rust implementation for performance
@@ -87,4 +118,3 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 ### Visual Enhancements
 - **Yank highlighting**: Highlighted text flashes for 150ms when copied
 - **Search highlighting**: Disabled (hlsearch off) for cleaner display
-
