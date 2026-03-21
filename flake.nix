@@ -31,8 +31,7 @@
                     pkgs.jq
                     pkgs.mise
                     pkgs.neovim
-                    pkgs.nerd-fonts.jetbrains-mono
-                    pkgs.nil
+		    pkgs.nil
                     pkgs.obsidian
                     pkgs.opencode
                     pkgs.postgresql_18
@@ -41,7 +40,7 @@
                     pkgs.starship
                     pkgs.stow
                     pkgs.tealdeer
-pkgs.tree-sitter
+		    pkgs.tree-sitter
                     pkgs.yazi
                     pkgs.zed-editor
                 ];
@@ -63,7 +62,7 @@ pkgs.tree-sitter
                     "karabiner-elements"
                     "beekeeper-studio"
                     "ghostty"
-"firefox@developer-edition"
+		    "firefox@developer-edition"
                     "yaak"
                 ];
             };
@@ -92,6 +91,8 @@ pkgs.tree-sitter
 		loginwindow.GuestEnabled = false;
 		NSGlobalDomain.AppleInterfaceStyle = "Dark";
 	    };
+
+            fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
             nixpkgs = {
                 # The platform the configuration will be used on.
