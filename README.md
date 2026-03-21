@@ -54,7 +54,6 @@ Packages are declared in `flake.nix`. Nix manages most software; Homebrew is use
 | `starship` | Cross-shell prompt |
 | `stow` | Symlink farm manager |
 | `tealdeer` | tldr pages client |
-| `tmux` | Terminal multiplexer |
 | `tree-sitter` | Parser generator + CLI |
 | `yazi` | Terminal file manager |
 | `zed-editor` | Zed code editor |
@@ -84,7 +83,6 @@ dotfiles/
 ├── karabiner/      # Karabiner-Elements: Linux-style ctrl shortcuts + caps lock → ctrl
 ├── nvim/           # Neovim config (Lua, native vim.pack + vim.lsp)
 ├── starship/       # Starship prompt config
-├── tmux/           # Tmux config
 ├── wezterm/        # WezTerm terminal emulator config
 └── zed/            # Zed editor settings + keybindings
 ```

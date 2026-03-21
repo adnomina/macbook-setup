@@ -41,8 +41,7 @@
                     pkgs.starship
                     pkgs.stow
                     pkgs.tealdeer
-                    pkgs.tmux
-                    pkgs.tree-sitter
+pkgs.tree-sitter
                     pkgs.yazi
                     pkgs.zed-editor
                 ];
