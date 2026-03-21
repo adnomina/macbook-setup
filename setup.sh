@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Symlink dotfiles with GNU Stow
 echo "Symlinking dotfiles ..."
-stow --target="$HOME" --dir=./dotfiles fish ghostty nvim zed tmux starship aerospace wezterm
+stow --target="$HOME" --dir=./dotfiles fish ghostty nvim zed tmux starship aerospace wezterm karabiner
 
 # Change shell to fish
 echo "Configuring fish as default shell ..."

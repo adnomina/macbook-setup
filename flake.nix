@@ -61,6 +61,7 @@
                 casks = [
                     "nikitabobko/tap/aerospace"
                     "arc"
+                    "karabiner-elements"
                     "beekeeper-studio"
                     "ghostty"
                     "copilot-cli"
