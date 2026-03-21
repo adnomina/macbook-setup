@@ -86,6 +86,8 @@
 
             system.primaryUser = "nicolas";
 
+            users.users.nicolas.shell = pkgs.fish;
+
 	    system.defaults = {
 		dock.autohide = true;
 		finder.FXPreferredViewStyle = "clmv";
@@ -94,6 +96,11 @@
 	    };
 
             fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
+
+            system.activationScripts.postActivation.text = ''
+                echo "Symlinking dotfiles ..."
+                ${pkgs.stow}/bin/stow --target="/Users/nicolas" --dir="${self}/dotfiles" --restow fish ghostty nvim zed starship aerospace wezterm karabiner
+            '';
 
             nixpkgs = {
                 # The platform the configuration will be used on.

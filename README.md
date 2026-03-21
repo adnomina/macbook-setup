@@ -10,18 +10,12 @@ Automated setup for a fresh macOS (Apple Silicon) development environment. Packa
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
 
-**2. Apply the Nix configuration** (installs all packages including Fish and Stow):
+**2. Apply the Nix configuration** (installs all packages, symlinks dotfiles, and sets Fish as default shell):
 
 ```bash
 git clone https://github.com/adnomina/macbook-setup.git
 cd macbook-setup
 sudo darwin-rebuild switch --flake .
-```
-
-**3. Symlink dotfiles and set Fish as default shell:**
-
-```bash
-bash setup.sh
 ```
 
 ## What Gets Installed
