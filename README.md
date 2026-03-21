@@ -43,7 +43,7 @@ Packages are declared in `flake.nix`. Nix manages most software; Homebrew is use
 | `gnupg` | GNU Privacy Guard |
 | `jq` | JSON processor |
 | `mise` | Polyglot runtime version manager |
-| `neovim` | Text editor |
+| `neovim` (nightly) | Text editor (via [neovim-nightly-overlay](https://github.com/nix-community/neovim-nightly-overlay)) |
 | `nerd-fonts.jetbrains-mono` | JetBrains Mono Nerd Font |
 | `nil` | Nix language server |
 | `obsidian` | Markdown note-taking |
