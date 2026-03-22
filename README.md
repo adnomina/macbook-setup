@@ -64,6 +64,15 @@ Packages are declared in `flake.nix`. Nix manages most software; Homebrew is use
 | `karabiner-elements` | Keyboard remapper |
 | `yaak` | API client |
 
+## Updating
+
+To update all nix inputs and rebuild, run the following two commands in the root of this repository.
+
+```bash
+nix flake update
+darwin-rebuild switch --flake .
+```
+
 ## Dotfiles
 
 Dotfiles are organized as [GNU Stow](https://www.gnu.org/software/stow/) packages under `dotfiles/` and symlinked into `$HOME`:
