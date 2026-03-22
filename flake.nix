@@ -60,7 +60,7 @@
                 ];
                 casks = [
                     "nikitabobko/tap/aerospace"
-                    "arc"
+                    "zen"
                     "karabiner-elements"
                     "beekeeper-studio"
                     "ghostty"
