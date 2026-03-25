@@ -64,8 +64,9 @@
                     "karabiner-elements"
                     "beekeeper-studio"
                     "ghostty"
-		    "firefox@developer-edition"
+                    "firefox@developer-edition"
                     "yaak"
+                    "figma"
                 ];
             };
 
@@ -89,12 +90,12 @@
 
             users.users.nicolas.shell = pkgs.fish;
 
-	    system.defaults = {
-		dock.autohide = true;
-		finder.FXPreferredViewStyle = "clmv";
-		loginwindow.GuestEnabled = false;
-		NSGlobalDomain.AppleInterfaceStyle = "Dark";
-	    };
+    	    system.defaults = {
+          		dock.autohide = true;
+          		finder.FXPreferredViewStyle = "clmv";
+          		loginwindow.GuestEnabled = false;
+          		NSGlobalDomain.AppleInterfaceStyle = "Dark";
+    	    };
 
             fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
