@@ -82,12 +82,45 @@ dotfiles/
 ├── aerospace/      # AeroSpace tiling window manager config (cmd as modifier)
 ├── fish/           # Fish shell config
 ├── ghostty/        # Ghostty terminal config + Catppuccin theme
-├── karabiner/      # Karabiner-Elements: Linux-style ctrl shortcuts + caps lock → ctrl
+├── karabiner/      # Karabiner-Elements: caps lock → ctrl
 ├── nvim/           # Neovim config (Lua, native vim.pack + vim.lsp)
 ├── starship/       # Starship prompt config
+├── tuna/           # Tuna launcher config (leader mode bindings)
 ├── wezterm/        # WezTerm terminal emulator config
 └── zed/            # Zed editor settings + keybindings
 ```
+
+### Tuna Leader Mode
+
+Leader key: tap right `⌘`.
+
+| Key | Action |
+|-----|--------|
+| `s` | Safari |
+| `t` | Terminal |
+| `f` | Finder |
+| `m` | Messages |
+| `n` | Notes |
+| `d` | Downloads folder |
+| `h` | Home folder |
+| `w` | **Aerospace** (submenu) |
+
+#### Aerospace submenu (`w → …`)
+
+| Key | Action |
+|-----|--------|
+| `1` / `2` / `3` | Switch to workspace 💬 / 🌐 / 💻 |
+| `f` | Fullscreen |
+| `F` | Flatten workspace tree |
+| `s` | Enter resize mode |
+| `R` | Reload AeroSpace config |
+| `l → h/v` | Layout h_accordion / v_accordion |
+| `l → t` | Layout tiles |
+| `l → f` | Toggle floating/tiling |
+| `j → h/j/k/l` | Join with left/down/up/right |
+| `m → h/j/k/l` | Move window left/down/up/right |
+| `m → 1/2/3` | Move node to 💬/🌐/💻 (focus follows) |
+| `m → !/@ /#` | Move node to 💬/🌐/💻 (no focus follow) |
 
 ## Theme
 
