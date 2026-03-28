@@ -108,7 +108,7 @@
     "document_symbols": "on",
     "colorize_brackets": true,
     "minimap": {
-        "show": "always",
+        "show": "never",
     },
     "which_key": {
         "delay_ms": 250,
@@ -150,20 +150,10 @@
     },
 
     // AI Agent
-    "agent_servers": {
-        "github-copilot-cli": {
-            "type": "registry",
-        },
-        "opencode": {
-            "type": "registry",
-        },
-        "github-copilot": {
-            "type": "registry",
-        },
-    },
+    "show_edit_predictions": true,
     "edit_predictions": {
         "provider": "copilot",
-        "mode": "subtle",
+        "mode": "subtle"
     },
 
     // MCPs
