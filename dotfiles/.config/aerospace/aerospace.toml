@@ -108,6 +108,10 @@ if.app-id = 'com.apple.finder'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.bitwarden.desktop'
 run = ['layout floating']
 
