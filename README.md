@@ -79,7 +79,7 @@ Dotfiles are organized as [GNU Stow](https://www.gnu.org/software/stow/) package
 
 ```
 dotfiles/
-├── aerospace/      # AeroSpace tiling window manager config (cmd as modifier)
+├── aerospace/      # AeroSpace tiling window manager config (alt as modifier)
 ├── fish/           # Fish shell config
 ├── ghostty/        # Ghostty terminal config + Catppuccin theme
 ├── karabiner/      # Karabiner-Elements: caps lock → ctrl
