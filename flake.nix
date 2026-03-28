@@ -14,39 +14,38 @@
         configuration = { pkgs, ... }: {
             # List packages installed in system profile. To search by name, run:
             # $ nix-env -qaP | grep wget
-            environment.systemPackages =
-                [
-                    pkgs.bat
-                    pkgs.btop
-                    pkgs.colima
-                    pkgs.coreutils
-                    pkgs.claude-code
-                    pkgs.docker
-                    pkgs.docker-compose
-                    pkgs.findutils
-                    pkgs.gawk
-                    pkgs.gh
-                    pkgs.git
-                    pkgs.gnused
-                    pkgs.gnupg
-                    pkgs.jq
-                    pkgs.mise
-                    neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default
-          		    pkgs.nil
-					pkgs.nixd
-                    pkgs.obsidian
-                    pkgs.opencode
-                    pkgs.postgresql_18
-                    pkgs.ripgrep
-                    pkgs.slack
-                    pkgs.starship
-                    pkgs.stow
-                    pkgs.tealdeer
-          		    pkgs.tree-sitter
-                    pkgs.vscode
-                    pkgs.yazi
-                    pkgs.zed-editor
-                ];
+            environment.systemPackages = with pkgs; [
+                bat
+                btop
+                colima
+                coreutils
+                claude-code
+                docker
+                docker-compose
+                findutils
+                gawk
+                gh
+                git
+                gnused
+                gnupg
+                jq
+                mise
+                neovim-nightly-overlay.packages.${stdenv.hostPlatform.system}.default
+                nil
+				nixd
+                obsidian
+                opencode
+                postgresql_18
+                ripgrep
+                slack
+                starship
+                stow
+                tealdeer
+                tree-sitter
+                vscode
+                yazi
+                zed-editor
+            ];
 
             # Homebrew for packages not available in nixpkgs.
             homebrew = {
