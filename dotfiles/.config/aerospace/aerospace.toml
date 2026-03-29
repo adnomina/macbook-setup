@@ -2,8 +2,6 @@ config-version = 2
 
 start-at-login = true
 
-persistent-workspaces = []
-
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
