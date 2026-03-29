@@ -12,6 +12,7 @@ alias cat="bat"
 alias less="bat"
 alias cc="claude"
 alias oc="opencode"
+alias z="zeditor"
 
 mise activate fish | source
 starship init fish | source
