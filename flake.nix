@@ -111,17 +111,6 @@
 
                 # Allow unfree packages.
                 config.allowUnfree = true;
-
-                # Fix direnv CGO build failure on darwin.
-                overlays = [
-                    (final: prev: {
-                        direnv = prev.direnv.overrideAttrs (old: {
-                            postPatch = (old.postPatch or "") + ''
-                                substituteInPlace GNUmakefile --replace-fail " -linkmode=external" ""
-                            '';
-                        });
-                    })
-                ];
             };
         };
     in
