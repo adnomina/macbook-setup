@@ -11,11 +11,6 @@
     ],
     "defaultMode": "default"
   },
-  "statusLine": {
-    "type": "command",
-    "command": "~/.local/bin/starship-claude",
-    "padding": 0
-  },
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
