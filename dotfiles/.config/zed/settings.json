@@ -155,15 +155,16 @@
         "provider": "copilot",
         "mode": "subtle"
     },
-
-    // MCPs
-    "context_servers": {
-        "figma-desktop": {
-            "settings": {},
-
-            "enabled": true,
-            "url": "http://127.0.0.1:3845/mcp",
+    "agent_servers": {
+        "github-copilot-cli": {
+            "type": "registry"
         },
+        "claude-acp": {
+            "type": "registry",
+            "default_config_options": {
+                "mode": "acceptEdits"
+            }
+        }
     },
 
     // Miscellaneous
