@@ -1,8 +1,4 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  },
   "permissions": {
     "allow": [
       "Bash(* --version)",
@@ -14,6 +10,10 @@
       "Bash(rg)"
     ],
     "defaultMode": "default"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
   },
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
