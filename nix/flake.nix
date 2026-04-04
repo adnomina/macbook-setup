@@ -98,7 +98,7 @@
 
             system.activationScripts.postActivation.text = ''
                 echo "Run this from the repo root to symlink dotfiles:"
-                echo "  stow dotfiles"
+                echo "  stow ."
             '';
 
             nixpkgs = {
