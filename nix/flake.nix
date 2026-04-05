@@ -21,6 +21,7 @@
                 claude-code
                 docker
                 docker-compose
+                fd
                 findutils
                 fzf
                 gawk
