@@ -23,6 +23,7 @@
                 docker-compose
                 fd
                 findutils
+                fnm
                 fzf
                 gawk
                 gh
@@ -30,7 +31,6 @@
                 gnused
                 gnupg
                 jq
-                mise
                 neovim-nightly-overlay.packages.${stdenv.hostPlatform.system}.default
                 nil
                 nixd
