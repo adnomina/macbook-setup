@@ -1,8 +1,5 @@
 schemaVersion = 1
 
-[extensions]
-enabledIdentifiers = [ 'com.brnbw.tuna.plugins.notes', 'com.brnbw.tuna.plugins.obsidian', 'com.brnbw.tuna.plugins.reminders' ]
-
 [hotkeys]
 custom = []
 
