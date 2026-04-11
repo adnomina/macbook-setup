@@ -30,7 +30,7 @@
                 git
                 gnused
                 gnupg
-                graphql-lsp
+                graphql-language-service-cli
                 jq
                 lua-language-server
                 neovim
