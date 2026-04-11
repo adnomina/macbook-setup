@@ -144,7 +144,6 @@ Uses native `vim.pack` for plugin management and built-in `vim.lsp` (no plugin w
 | `catppuccin/nvim` | Color scheme |
 | `which-key.nvim` | Keybinding hints |
 | `nvim-web-devicons` | File icons |
-| `lualine.nvim` | Status line |
 | `fff.nvim` | File manager |
 | `nvim-lspconfig` | LSP configs |
 | `gitsigns.nvim` | Git hunk decorations |

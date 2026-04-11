@@ -2,8 +2,7 @@ vim.pack.add({ { src = "https://github.com/mason-org/mason.nvim" },
     { src = "https://github.com/catppuccin/nvim" },
     { src = "https://github.com/folke/which-key.nvim" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
-    { src = "https://github.com/nvim-lualine/lualine.nvim" },
-    { src = "https://github.com/dmtrKovalenko/fff.nvim" },
+{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/lewis6991/gitsigns.nvim",
     {
@@ -19,8 +18,6 @@ require("catppuccin").setup({
     transparent_background = false,
     term_colors = true,
 })
-
-require("lualine").setup()
 
 require("gitsigns").setup({
     signs = {

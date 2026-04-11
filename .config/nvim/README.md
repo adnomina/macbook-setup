@@ -12,7 +12,6 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 | **catppuccin/nvim** | Color theme | Mocha flavor with true color support |
 | **which-key.nvim** | Keybinding helper | Displays available keybindings and descriptions |
 | **nvim-web-devicons** | File icons | Icons for different file types in explorer and statusline |
-| **lualine.nvim** | Status line | Minimal status/info line at bottom of window |
 | **fff.nvim** | Fuzzy file finder | Fast file search with fuzzy matching |
 | **nvim-lspconfig** | LSP configurations | Language server protocol client configs |
 | **gitsigns.nvim** | Git integration | Git signs in the sign column, hunk navigation and staging |
