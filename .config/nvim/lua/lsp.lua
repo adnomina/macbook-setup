@@ -19,7 +19,6 @@ vim.lsp.enable({
     "jsonls",
     "lua_ls",
     "prismals",
-    "sqlls",
     "tailwindcss",
     "vtsls",
 })
