@@ -3,6 +3,14 @@ vim.pack.add({
     "https://github.com/folke/which-key.nvim",
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-tree/nvim-web-devicons",
+    "https://github.com/romus204/tree-sitter-manager.nvim",
+})
+
+require("tree-sitter-manager").setup({
+    ensure_installed = {
+        "bash", "css", "graphql", "html", "javascript",
+        "json", "lua", "nix", "toml", "tsx", "typescript", "yaml",
+    },
 })
 
 vim.cmd.packadd("nvim.undotree")

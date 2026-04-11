@@ -12,6 +12,10 @@
       "rev": "c72328a5494b4502947a022fe69c0c47e53b6aa6",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "tree-sitter-manager.nvim": {
+      "rev": "1085058c03df1d063f285e0a5c42547ad200a10b",
+      "src": "https://github.com/romus204/tree-sitter-manager.nvim"
+    },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
       "src": "https://github.com/folke/which-key.nvim"
