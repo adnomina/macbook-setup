@@ -3,7 +3,6 @@ vim.pack.add({
     "https://github.com/dmtrKovalenko/fff.nvim",
     "https://github.com/folke/which-key.nvim",
     "https://github.com/lewis6991/gitsigns.nvim",
-    "https://github.com/mason-org/mason.nvim",
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-tree/nvim-web-devicons",
     {
@@ -11,8 +10,6 @@ vim.pack.add({
         build = ":TSUpdate"
     },
 })
-
-require("mason").setup()
 
 require("catppuccin").setup({
     flavour = "mocha",

@@ -8,7 +8,6 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 
 | Plugin | Purpose | Key Features |
 |--------|---------|--------------|
-| **mason.nvim** | LSP/tool installer | Manages language server installation |
 | **catppuccin/nvim** | Color theme | Mocha flavor with true color support |
 | **which-key.nvim** | Keybinding helper | Displays available keybindings and descriptions |
 | **nvim-web-devicons** | File icons | Icons for different file types in explorer and statusline |
