@@ -75,16 +75,21 @@ A minimal Neovim 0.12 setup using native plugin management (`vim.pack`) and buil
 | Keybinding | Mode | Action |
 |------------|------|--------|
 | `gd` | Normal | Go to definition |
-| `gr` | Normal | References |
-| `gI` | Normal | Go to implementation |
-| `grt` | Normal | Go to type definition (0.12 built-in) |
-| `grx` | Normal | Run code lens (0.12 built-in) |
 | `gD` | Normal | Go to declaration |
 | `K` | Normal | Hover documentation |
 | `gK` | Normal | Signature help |
-| `<leader>ca` | Normal, Visual | Code action |
-| `<leader>cr` | Normal | Rename symbol |
 | `<leader>cD` | Normal | Workspace diagnostics |
+
+**0.12 built-in defaults (no explicit mapping needed):**
+
+| `gra` | Normal, Visual | Code action |
+| `gri` | Normal | Go to implementation |
+| `grn` | Normal | Rename symbol |
+| `grr` | Normal | References |
+| `grt` | Normal | Go to type definition |
+| `grx` | Normal | Run code lens |
+| `gO` | Normal | Document symbols |
+| `<C-s>` | Insert | Signature help |
 
 ### Git (gitsigns, buffer-local)
 

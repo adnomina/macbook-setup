@@ -161,17 +161,18 @@ Completion uses the native `autocomplete` option (0.12 built-in, no plugin).
 | Key | Action |
 |-----|--------|
 | `gd` | Go to definition |
-| `gr` | References |
-| `gI` | Go to implementation |
-| `grt` | Go to type definition (0.12 built-in) |
-| `grx` | Run code lens (0.12 built-in) |
 | `gD` | Go to declaration |
 | `K` | Hover docs |
 | `gK` | Signature help |
-| `<leader>ca` | Code action |
-| `<leader>cr` | Rename |
 | `<leader>cD` | Workspace diagnostics |
 | `<leader>U` | Open undo tree |
+| `gra` | Code action (0.12 built-in) |
+| `gri` | Go to implementation (0.12 built-in) |
+| `grn` | Rename (0.12 built-in) |
+| `grr` | References (0.12 built-in) |
+| `grt` | Go to type definition (0.12 built-in) |
+| `grx` | Run code lens (0.12 built-in) |
+| `gO` | Document symbols (0.12 built-in) |
 
 **Git hunk keymaps** (gitsigns):
 
