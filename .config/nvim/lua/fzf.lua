@@ -57,7 +57,7 @@ function M.find_files()
                 if not vim.fn.fnamemodify(path, ":p"):find("^/") then
                     path = root .. "/" .. path
                 end
-                vim.cmd.tabedit(path)
+                vim.cmd.edit(path)
             end
         end,
     })
