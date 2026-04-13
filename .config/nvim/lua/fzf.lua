@@ -6,16 +6,7 @@ local colors = "--color=bg:#1e1e2e,bg+:#313244,fg:#cdd6f4,fg+:#cdd6f4"
     .. ",prompt:#cba6f7,pointer:#f5c2e7,marker:#f5c2e7"
     .. ",info:#cba6f7,spinner:#f5c2e7,border:#313244,header:#f38ba8"
 
-local function get_root()
-    local result = vim.system({ "git", "rev-parse", "--show-toplevel" }, { text = true }):wait()
-    if result.code == 0 then
-        return vim.trim(result.stdout)
-    end
-    return vim.fn.getcwd()
-end
-
 function M.find_files()
-    local root = get_root()
     local tmpfile = vim.fn.tempname()
 
     local width = math.floor(vim.o.columns * 0.8)
@@ -35,14 +26,13 @@ function M.find_files()
     })
 
     local cmd = string.format(
-        "fd --type f . %s | fzf %s > %s",
-        vim.fn.shellescape(root),
+        "fd --type f . | fzf %s > %s",
         colors,
         vim.fn.shellescape(tmpfile)
     )
 
-    vim.fn.termopen(cmd, {
-        cwd = root,
+    vim.fn.jobstart(cmd, {
+        term = true,
         on_exit = function()
             local ok, lines = pcall(vim.fn.readfile, tmpfile)
             vim.fn.delete(tmpfile)
@@ -53,11 +43,7 @@ function M.find_files()
                 vim.api.nvim_buf_delete(buf, { force = true })
             end
             if ok and #lines > 0 and lines[1] ~= "" then
-                local path = lines[1]
-                if not vim.fn.fnamemodify(path, ":p"):find("^/") then
-                    path = root .. "/" .. path
-                end
-                vim.cmd.edit(path)
+                vim.cmd.edit(lines[1])
             end
         end,
     })
