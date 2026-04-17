@@ -2,11 +2,6 @@
     // Theme
     "theme": "Catppuccin Mocha",
     "icon_theme": "Colored Zed Icons Theme Dark",
-    "theme_overrides": {
-        "Catppuccin Mocha": {
-            "border.variant": "#1e1e2d",
-        },
-    },
 
     // Typography
     "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -14,7 +9,6 @@
 
     // Docks, Panels, and Bars
     "title_bar": {
-        "show_menus": true,
         "show_branch_icon": true,
     },
     "tab_bar": {
@@ -26,28 +20,17 @@
         "git_status": true,
     },
     "toolbar": {
-        "code_actions": true,
         "quick_actions": false,
     },
     "project_panel": {
         "dock": "right",
         "hide_root": true,
         "starts_open": false,
-        "indent_guides": {
-            "show": "never",
-        },
-    },
-    "outline_panel": {
-        "indent_guides": {
-            "show": "never",
-        },
     },
     "collaboration_panel": {
-        "dock": "right",
         "button": false,
     },
     "notification_panel": {
-        "dock": "right",
         "button": false,
     },
     "git_panel": {
@@ -55,15 +38,15 @@
     },
     "agent": {
         "dock": "left",
-        "default_profile": "ask",
+        "default_profile": "write",
         "inline_assistant_model": {
             "provider": "copilot_chat",
             "model": "claude-sonnet-4.6",
             "enable_thinking": false,
         },
         "default_model": {
-            "provider": "copilot_chat",
-            "model": "claude-sonnet-4.6",
+            "provider": "lmstudio",
+            "model": "google/gemma-4-e4b",
             "enable_thinking": false,
         },
     },
@@ -76,18 +59,12 @@
     "scrollbar": {
         "show": "never",
     },
-    "gutter": {
-        "min_line_number_digits": 0,
-        "folds": false,
-        "runnables": false,
-    },
 
     // Editor
     "vim_mode": true,
     "vim": {
         "use_smartcase_find": true,
     },
-    "cursor_shape": "block",
     "cursor_blink": false,
     "drag_and_drop_selection": {
         "enabled": false,
@@ -156,6 +133,9 @@
         "mode": "subtle"
     },
     "agent_servers": {
+        "opencode": {
+            "type": "registry"
+        },
         "github-copilot-cli": {
             "type": "registry"
         },
@@ -166,6 +146,12 @@
             }
         }
     },
+    "language_models": {
+        "lmstudio": {
+            "api_url": "http://localhost:1234/v1"
+        }
+    },
+    "agent_ui_font_size": 16.0,
 
     // Miscellaneous
     "use_system_window_tabs": true,
