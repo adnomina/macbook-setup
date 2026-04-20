@@ -18,7 +18,7 @@ vim.cmd.packadd("nvim.undotree")
 vim.cmd.packadd("nvim.difftool")
 
 require("catppuccin").setup({
-    flavour = "mocha",
+    flavour = "macchiato",
     transparent_background = false,
     term_colors = true,
 })
