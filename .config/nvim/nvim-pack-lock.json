@@ -5,7 +5,7 @@
       "src": "https://github.com/catppuccin/nvim"
     },
     "nvim-lspconfig": {
-      "rev": "cb5bc0b2b35a6d513e3298d285db81453e791f4f",
+      "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-web-devicons": {
@@ -13,7 +13,7 @@
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "1085058c03df1d063f285e0a5c42547ad200a10b",
+      "rev": "48396293d84a8dd88b857f298ee5953fa3572e5f",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "which-key.nvim": {
