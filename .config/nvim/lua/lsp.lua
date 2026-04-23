@@ -1,13 +1,8 @@
 -- Global capabilities for all LSP servers
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
 vim.lsp.config("*", {
-    capabilities = {
-        workspace = {
-            fileOperations = {
-                didRename = true,
-                willRename = true,
-            },
-        },
-    },
+    capabilities = capabilities,
 })
 
 vim.lsp.enable({
@@ -58,6 +53,41 @@ vim.api.nvim_create_autocmd("LspAttach", {
             -- Inlay hints
             if client:supports_method("textDocument/inlayHint") and vim.bo[buf].buftype == "" then
                 vim.lsp.inlay_hint.enable(true, { bufnr = buf })
+            end
+
+            -- Completion
+            if client:supports_method("textDocument/completion") then
+                vim.lsp.completion.enable(true, client.id, buf, { autotrigger = true })
+
+                vim.keymap.set("i", "<Tab>", function()
+                    if vim.snippet.active({ direction = 1 }) then
+                        return "<cmd>lua vim.snippet.jump(1)<cr>"
+                    elseif vim.fn.pumvisible() == 1 then
+                        return "<C-y>"
+                    else
+                        return "<Tab>"
+                    end
+                end, { buffer = buf, expr = true, silent = true, desc = "Confirm completion / next snippet placeholder" })
+
+                vim.keymap.set("i", "<S-Tab>", function()
+                    if vim.snippet.active({ direction = -1 }) then
+                        return "<cmd>lua vim.snippet.jump(-1)<cr>"
+                    elseif vim.fn.pumvisible() == 1 then
+                        return "<C-p>"
+                    else
+                        return "<S-Tab>"
+                    end
+                end, { buffer = buf, expr = true, silent = true, desc = "Previous completion / previous snippet placeholder" })
+            end
+
+            -- Signature help
+            if client:supports_method("textDocument/signatureHelp") then
+                vim.api.nvim_create_autocmd("CursorHoldI", {
+                    buffer = buf,
+                    callback = function()
+                        vim.lsp.buf.signature_help()
+                    end,
+                })
             end
         end
     end,
