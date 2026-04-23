@@ -1,26 +1,39 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(* --version)",
-      "Bash(* -v)",
-      "Bash(* --help)",
-      "Bash(* -h)",
-      "Bash(ls)",
-      "Bash(bat)",
-      "Bash(rg)"
-    ],
-    "defaultMode": "default"
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  },
-  "enabledPlugins": {
-    "skill-creator@claude-plugins-official": true,
-    "figma@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "lua-lsp@claude-plugins-official": true
-  },
-  "extraKnownMarketplaces": {},
-  "voiceEnabled": true
+    "permissions": {
+        "allow": [
+            "Bash(* --version)",
+            "Bash(* -v)",
+            "Bash(* --help)",
+            "Bash(* -h)",
+            "Bash(ls)",
+            "Bash(bat)",
+            "Bash(rg)"
+        ],
+        "defaultMode": "default"
+    },
+    "statusLine": {
+        "type": "command",
+        "command": "~/.claude/statusline.sh"
+    },
+    "enabledPlugins": {
+        "skill-creator@claude-plugins-official": true,
+        "figma@claude-plugins-official": true,
+        "typescript-lsp@claude-plugins-official": true,
+        "lua-lsp@claude-plugins-official": true
+    },
+    "extraKnownMarketplaces": {},
+    "voiceEnabled": true,
+    "hooks": {
+        "Notification": [
+            {
+                "matcher": "",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "osascript -e 'display notification \"Claude Code needs your attention\" with title \"Claude Code\"'"
+                    }
+                ]
+            }
+        ]
+    }
 }
