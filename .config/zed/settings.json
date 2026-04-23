@@ -29,6 +29,7 @@
     },
     "toolbar": {
         "quick_actions": false,
+        "breadcrumbs": false,
     },
     "project_panel": {
         "dock": "right",
@@ -64,6 +65,9 @@
         "keep_selection_on_copy": false,
         "copy_on_select": true,
         "option_as_meta": true,
+        "scrollbar": {
+            "show": "never",
+        },
     },
     "scrollbar": {
         "show": "never",
