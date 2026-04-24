@@ -49,7 +49,6 @@
                 tree-sitter
                 vscode-langservers-extracted
                 vtsls
-                zed-editor
             ];
 
             # Homebrew for packages not available in nixpkgs.
@@ -75,6 +74,7 @@
                     "lm-studio"
                     "nikitabobko/tap/aerospace"
                     "yaak"
+                    "zed@preview"
                     "zen"
                 ];
             };
