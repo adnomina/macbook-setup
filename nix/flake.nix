@@ -14,7 +14,6 @@
             # List packages installed in system profile. To search by name, run:
             # $ nix-env -qaP | grep wget
             environment.systemPackages = with pkgs; [
-                bash-language-server
                 bat
                 colima
                 coreutils
@@ -30,25 +29,19 @@
                 git
                 gnused
                 gnupg
-                graphql-language-service-cli
                 jq
-                lua-language-server
                 neovim
                 nil
                 nixd
                 obsidian
                 opencode
-                prisma-language-server
                 ripgrep
                 slack
                 starship
                 stow
-                tailwindcss-language-server
                 tealdeer
                 tmux
                 tree-sitter
-                vscode-langservers-extracted
-                vtsls
             ];
 
             # Homebrew for packages not available in nixpkgs.
@@ -65,7 +58,6 @@
                 ];
                 casks = [
                     "beekeeper-studio"
-                    "cursor"
                     "docker/tap/sbx"
                     "figma"
                     "firefox@developer-edition"
@@ -74,7 +66,7 @@
                     "lm-studio"
                     "nikitabobko/tap/aerospace"
                     "yaak"
-                    "zed@preview"
+                    "zed"
                     "zen"
                 ];
             };
