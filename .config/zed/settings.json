@@ -24,17 +24,14 @@
         "breadcrumbs": false,
     },
     "project_panel": {
-        "dock": "right",
         "hide_root": true,
         "starts_open": false,
     },
     "collaboration_panel": {
         "button": false,
     },
-    "git_panel": {
-        "dock": "right",
-    },
     "agent": {
+        "flexible": false,
         "inline_assistant_model": {
             "provider": "copilot_chat",
             "model": "claude-sonnet-4.6",
