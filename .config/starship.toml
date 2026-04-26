@@ -4,7 +4,6 @@ add_newline = false
 follow_symlinks = false
 
 format = """
-[>_](pink)\
 $username\
 $directory\
 $git_branch\
@@ -16,16 +15,15 @@ palette = "catppuccin_macchiato"
 
 [username]
 show_always = true
-format = "[ $user](green)"
+format = "[  $user](green)"
 
 [directory]
 style = "sapphire"
-format = "[ $path]($style)"
+format = "[  $path]($style)"
 truncation_length = 4
 
 [git_branch]
-symbol = "[](lavender)"
-format = "[ $symbol $branch](lavender)"
+format = "[  $branch](lavender)"
 
 [git_status]
 format = "[$untracked$staged$modified$renamed$conflicted$ahead_behind]($style)"
@@ -42,8 +40,8 @@ diverged = "[ ⇕⇡${ahead_count}⇣${behind_count}](mauve)"
 
 [character]
 disabled = false
-success_symbol = "[ ❯](bold fg:green)"
-error_symbol = "[ ❯](bold fg:red)"
+success_symbol = "[ >_](bold fg:green)"
+error_symbol = "[ >_](bold fg:red)"
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
