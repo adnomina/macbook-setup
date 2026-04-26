@@ -4,7 +4,7 @@ add_newline = false
 follow_symlinks = false
 
 format = """
->\
+[>_](pink)\
 $username\
 $directory\
 $git_branch\
