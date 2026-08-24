@@ -36,6 +36,11 @@ alias gst="git status"
 alias gsc="git switch -c"
 alias gsw="git switch"
 
+alias dcu="docker compose up"
+alias dcd="docker compose down"
+alias dcp="docker compose ps"
+alias dcl="docker compose logs -f"
+
 alias cc="nono run --profile claude --allow . -- claude"
 alias oc="nono run --profile opencode --allow . -- opencode"
 alias co="nono run --profile copilot-cli --allow-cwd -- copilot"
