@@ -28,7 +28,7 @@
   "mouse": false,
   "renderMarkdown": true,
   "respectGitignore": true,
-  "showReasoning": true,
+  "showReasoning": false,
   "showTipsOnStartup": false,
   "terminalProgress": true,
   "ide": {
