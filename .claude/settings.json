@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "ENABLE_CLAUDEAI_MCP_SERVERS": "false",
+    "CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION": "false",
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "DISABLE_TELEMETRY": "1"
+  },
+  "permissions": {
+    "deny": [
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "DesignSync",
+      "NotebookEdit",
+      "PowerShell",
+      "SendMessage",
+      "PushNotification",
+      "RemoteTrigger",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "CronCreate",
+      "CronDelete",
+      "CronList"
+    ]
+  },
+  "model": "sonnet",
+  "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
+  "spinnerTipsEnabled": false,
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "nono@nolabs-ai": true,
+    "i-have-adhd@i-have-adhd": true
+  },
+  "extraKnownMarketplaces": {
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    },
+    "beat-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "mercedes-benz@mercedes-benz.ghe.com:BEATeam/BEAT_R-Platform-Marketplace.git"
+      }
+    }
+  },
+  "feedbackSurveyRate": 0,
+  "effortLevel": "medium",
+  "theme": "dark"
+}
