@@ -11,11 +11,18 @@
         "source": "github",
         "repo": "nolabs-ai/nono-packs-copilot"
       }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
     }
   },
   "enabledPlugins": {
     "project-management@beat-marketplace": true,
-    "guardrails@beat-marketplace": true
+    "guardrails@beat-marketplace": true,
+    "i-have-adhd@i-have-adhd": true
   },
   "model": "auto",
   "askUser": true,
