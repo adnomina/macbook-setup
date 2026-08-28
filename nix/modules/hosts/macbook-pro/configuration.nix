@@ -56,16 +56,6 @@
       glow
       lazygit
 
-      # GUI apps
-      beekeeper-studio
-      firefox-devedition
-      ghostty-bin
-      net-news-wire
-      obsidian
-      # rio
-      slack
-      yaak
-      zed-editor
 
       # Clankers
       claude-code
@@ -78,6 +68,34 @@
       starship
       tree-sitter
     ];
+
+    nix-homebrew = {
+      enable = true;
+      user = "nicolas";
+      enableRosetta = false;
+      mutableTaps = true;
+    };
+
+    homebrew = {
+      enable = true;
+
+      casks = [
+        "beekeeper-studio"
+        "firefox@developer-edition"
+        "ghostty"
+        "netnewswire"
+        "obsidian"
+        "slack"
+        "yaak"
+        "zed"
+      ];
+
+      onActivation = {
+        autoUpdate = true;
+        upgrade = true;
+        cleanup = "zap";
+      };
+    };
 
     # Necessary for using flakes on this system.
     nix.settings.experimental-features = "nix-command flakes";
