@@ -23,20 +23,18 @@
       "CronList"
     ]
   },
-  "model": "sonnet",
+  "model": "opus[1m]",
   "disableClaudeAiConnectors": true,
   "disableBundledSkills": true,
   "disableRemoteControl": true,
   "disableWorkflows": true,
   "disableArtifact": true,
-  "spinnerTipsEnabled": false,
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
   },
   "enabledPlugins": {
-    "nono@nolabs-ai": true,
-    "i-have-adhd@i-have-adhd": true
+    "nono@nolabs-ai": true
   },
   "extraKnownMarketplaces": {
     "i-have-adhd": {
@@ -53,6 +51,7 @@
     }
   },
   "feedbackSurveyRate": 0,
+  "spinnerTipsEnabled": false,
   "effortLevel": "medium",
   "theme": "dark"
 }
