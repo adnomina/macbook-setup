@@ -1,163 +1,161 @@
 {
-  // Theme
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Macchiato"
-  },
-  "icon_theme": {
-    "mode": "system",
-    "light": "Colored Zed Icons Theme Light",
-    "dark": "Colored Zed Icons Theme Dark"
-  },
-  "diff_view_style": "unified",
-  // Typography
-  "buffer_font_family": "MonaspiceNe Nerd Font",
-  "buffer_font_size": 18.0,
-  "agent_ui_font_size": 18.0,
-  // Docks, Panels, and Bars
-  "tab_bar": {
-    "show": false,
-  },
-  "toolbar": {
-    "quick_actions": false,
-  },
-  "project_panel": {
-    "starts_open": false,
-  },
-  "collaboration_panel": {
-    "button": false,
-  },
-  "agent": {
-    "default_profile": "ask",
-    "flexible": false,
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.6",
-      "enable_thinking": false,
+    // Theme
+    "cli_default_open_behavior": "existing_window",
+    "theme": {
+        "mode": "system",
+        "light": "Catppuccin Latte",
+        "dark": "Catppuccin Macchiato",
     },
-  },
-  "bottom_dock_layout": "full",
-  "terminal": {
-    "font_family": "MonaspiceNe Nerd Font",
-    "keep_selection_on_copy": false,
-    "copy_on_select": true,
-    "option_as_meta": true,
+    "icon_theme": {
+        "mode": "system",
+        "light": "Colored Zed Icons Theme Light",
+        "dark": "Colored Zed Icons Theme Dark",
+    },
+    "diff_view_style": "unified",
+    // Typography
+    "buffer_font_family": "MonaspiceNe Nerd Font",
+    "buffer_font_size": 18.0,
+    "agent_ui_font_size": 18.0,
+    // Docks, Panels, and Bars
+    "tab_bar": {
+        "show": false,
+    },
+    "toolbar": {
+        "quick_actions": false,
+    },
+    "project_panel": {
+        "starts_open": false,
+    },
+    "collaboration_panel": {
+        "button": false,
+    },
+    "agent": {
+        "default_profile": "ask",
+        "flexible": false,
+        "inline_assistant_model": {
+            "provider": "copilot_chat",
+            "model": "claude-sonnet-4.6",
+            "enable_thinking": false,
+        },
+    },
+    "bottom_dock_layout": "full",
+    "terminal": {
+        "font_family": "MonaspiceNe Nerd Font",
+        "keep_selection_on_copy": false,
+        "copy_on_select": true,
+        "option_as_meta": true,
+        "scrollbar": {
+            "show": "never",
+        },
+        "env": {
+            "EDITOR": "zed --wait",
+            "VISUAL": "zed --wait",
+        },
+    },
     "scrollbar": {
-      "show": "never",
+        "show": "never",
     },
-    "env": {
-      "EDITOR": "zed --wait",
-      "VISUAL": "zed --wait"
-    }
-  },
-  "scrollbar": {
-    "show": "never",
-  },
-  // Editor
-  "helix_mode": true,
-  "cursor_blink": false,
-  "drag_and_drop_selection": {
-    "enabled": false,
-  },
-  "show_whitespaces": "selection",
-  "inline_code_actions": false,
-  "lsp_document_colors": "none",
-  "format_on_save": "off",
-  "extend_comment_on_newline": false,
-  "vertical_scroll_margin": 0,
-  "git": {
-    "inline_blame": {
-      "enabled": false,
+    // Editor
+    "helix_mode": true,
+    "cursor_blink": false,
+    "drag_and_drop_selection": {
+        "enabled": false,
     },
-  },
-  "close_on_file_delete": true,
-  "relative_line_numbers": "enabled",
-  "colorize_brackets": true,
-  "minimap": {
-    "show": "never",
-  },
-  "which_key": {
-    "delay_ms": 250,
-    "enabled": true,
-  },
-  "always_treat_brackets_as_autoclosed": true,
-  "indent_guides": {
-    "coloring": "indent_aware",
-  },
-  "wrap_guides": [
-    80
-  ],
-  "soft_wrap": "editor_width",
-  "hover_popover_delay": 250,
-  "tab_size": 4,
-  // LSP
-  "prettier": {
-    "allowed": true,
-  },
-  "lsp": {
-    "vtsls": {
-      "settings": {
-        "typescript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
+    "show_whitespaces": "selection",
+    "inline_code_actions": false,
+    "lsp_document_colors": "none",
+    "format_on_save": "off",
+    "extend_comment_on_newline": false,
+    "vertical_scroll_margin": 0,
+    "git": {
+        "inline_blame": {
+            "enabled": false,
         },
-        "javascript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
+    },
+    "close_on_file_delete": true,
+    "relative_line_numbers": "enabled",
+    "colorize_brackets": true,
+    "minimap": {
+        "show": "never",
+    },
+    "which_key": {
+        "delay_ms": 250,
+        "enabled": true,
+    },
+    "always_treat_brackets_as_autoclosed": true,
+    "indent_guides": {
+        "coloring": "indent_aware",
+    },
+    "wrap_guides": [80],
+    "soft_wrap": "editor_width",
+    "hover_popover_delay": 250,
+    "tab_size": 4,
+    // LSP
+    "prettier": {
+        "allowed": true,
+    },
+    "lsp": {
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+                "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+            },
+            "enable_lsp_tasks": true,
         },
-      },
-      "enable_lsp_tasks": true,
+        "tailwindcss-language-server": {
+            "settings": {
+                "classFunctions": ["cva", "cx"],
+            },
+        },
     },
-    "tailwindcss-language-server": {
-      "settings": {
-        "classFunctions": [
-          "cva",
-          "cx"
-        ],
-      },
+    // AI Agent
+    "show_edit_predictions": false,
+    "edit_predictions": {
+        "allow_data_collection": "no",
+        "provider": "copilot",
+        "mode": "subtle",
     },
-  },
-  // AI Agent
-  "show_edit_predictions": false,
-  "edit_predictions": {
-    "allow_data_collection": "no",
-    "provider": "copilot",
-    "mode": "subtle"
-  },
-  "agent_servers": {
-    "opencode": {
-      "type": "registry"
+    "agent_servers": {
+        "opencode": {
+            "type": "registry",
+        },
+        "github-copilot-cli": {
+            "default_config_options": {
+                "reasoning_effort": "high",
+                "mode": "https://agentclientprotocol.com/protocol/session-modes#agent",
+                "model": "gpt-5.6-terra",
+            },
+            "type": "registry",
+        },
+        "claude-acp": {
+            "type": "registry",
+            "default_config_options": {
+                "effort": "default",
+                "mode": "auto",
+            },
+        },
     },
-    "github-copilot-cli": {
-      "default_config_options": {
-        "model": "auto"
-      },
-      "type": "registry"
+    "language_models": {
+        "opencode": {
+            "show_go_models": false,
+            "show_zen_models": false,
+        },
     },
-    "claude-acp": {
-      "type": "registry",
-      "default_config_options": {
-        "effort": "default",
-        "mode": "auto"
-      }
-    }
-  },
-  "language_models": {
-    "opencode": {
-      "show_go_models": false,
-      "show_zen_models": false
-    }
-  },
-  // Miscellaneous
-  "use_system_window_tabs": true,
-  "session": {
-    "trust_all_worktrees": true,
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
+    // Miscellaneous
+    "use_system_window_tabs": true,
+    "session": {
+        "trust_all_worktrees": true,
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
 }
