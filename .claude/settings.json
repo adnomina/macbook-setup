@@ -34,7 +34,7 @@
     "command": "~/.claude/statusline.sh"
   },
   "enabledPlugins": {
-    "nono@nolabs-ai": true
+    "i-have-adhd@i-have-adhd": true
   },
   "extraKnownMarketplaces": {
     "i-have-adhd": {
@@ -42,17 +42,11 @@
         "source": "github",
         "repo": "ayghri/i-have-adhd"
       }
-    },
-    "beat-marketplace": {
-      "source": {
-        "source": "git",
-        "url": "mercedes-benz@mercedes-benz.ghe.com:BEATeam/BEAT_R-Platform-Marketplace.git"
-      }
     }
   },
+  "outputStyle": "Concise",
   "feedbackSurveyRate": 0,
   "spinnerTipsEnabled": false,
   "effortLevel": "medium",
-  "theme": "dark",
-  "outputStyle": "Concise"
+  "theme": "dark"
 }
