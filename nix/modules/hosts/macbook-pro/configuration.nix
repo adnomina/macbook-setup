@@ -45,22 +45,14 @@
       fnm
       gh
       git
-      herdr
       mise
-      nono
-      postgresql
 
       # TUI apps
-      gh-dash
-      gh-enhance
       glow
-      lazygit
-
 
       # Clankers
       claude-code
       github-copilot-cli
-      llama-cpp
       ollama
       opencode
 
