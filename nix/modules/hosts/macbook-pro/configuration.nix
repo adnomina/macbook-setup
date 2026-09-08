@@ -39,9 +39,6 @@
       neovim
 
       # Dev tools
-      colima
-      docker
-      docker-compose
       fnm
       gh
       git
@@ -73,6 +70,7 @@
 
       casks = [
         "beekeeper-studio"
+        "docker-desktop"
         "firefox@developer-edition"
         "ghostty"
         "netnewswire"
